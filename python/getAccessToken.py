@@ -18,7 +18,7 @@ def getToken(app_id, app_secret):
 	response = appSession.auth()
 
 	if response["code"] != 200:
-		print response
+		print(response)
 		sys.exit()
 
 	auth_code = response["data"]["authorization_code"]
